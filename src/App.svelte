@@ -6,17 +6,31 @@
   // const status = 'danger'
   // const success = 'success'
   // const promete = true
-  const num = "hdhshdjsh";
+  // const num = "hdhshdjsh";
+  const name =['ram','sita','radha']
+  const fullName =[
+    {first:'ram', last:'sahu'},
+    {first:'sita',last:'sahu'},
+    {first:'radha',last:'patro'}
+  ]
 </script>
 
 <main>
+{#each  name as names,index }
+<h2>{names}    {index+1} </h2>
+  
+{/each}
+{#each fullName as fullnames,index }
+<h2>{fullnames.first} {fullnames.last} {index+8}</h2>
+  {/each}
+
   <!-- <h1 class="{success}">Hello {name} </h1>
 	<h2 class:promete>{@html role}</h2>
 	<h1 {id}>this is a heding</h1>
 	<button {disabled}>bind</button>
 	<h3 class="underline">ashutosh</h3>
 	<h2 class="{status}">rama</h2> -->
-  {#if num === 0}
+  <!-- {#if num === 0}
     <h1>num is zero</h1>
   {:else if num < 0}
     <h1>numern is negative</h1>
@@ -24,7 +38,7 @@
     <h1>number is positive</h1>
   {:else}
     <h2>num is not a number</h2>
-  {/if}
+  {/if} -->
 </main>
 
 <style>

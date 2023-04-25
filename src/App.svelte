@@ -23,6 +23,7 @@
 {#each fullName as fullnames,index }
 <h2>{fullnames.first} {fullnames.last} {index+8}</h2>
   {/each}
+ 
 
   <!-- <h1 class="{success}">Hello {name} </h1>
 	<h2 class:promete>{@html role}</h2>

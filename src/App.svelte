@@ -7,23 +7,20 @@
   // const success = 'success'
   // const promete = true
   // const num = "hdhshdjsh";
-  const name =['ram','sita','radha']
-  const fullName =[
-    {first:'ram', last:'sahu'},
-    {first:'sita',last:'sahu'},
-    {first:'radha',last:'patro'}
-  ]
+  const name = ["ram", "sita", "radha"];
+  const fullName = [
+    { first: "ram", last: "sahu" },
+    { first: "sita", last: "sahu" },
+    { first: "radha", last: "patro" },
+  ];
 </script>
-
 <main>
-{#each  name as names,index }
-<h2>{names}    {index+1} </h2>
-  
-{/each}
-{#each fullName as fullnames,index }
-<h2>{fullnames.first} {fullnames.last} {index+8}</h2>
+  {#each name as names, index}
+    <h2>{names} {index + 1}</h2>
   {/each}
- 
+  {#each fullName as fullnames, index}
+    <h2>{fullnames.first} {fullnames.last} {index + 8}</h2>
+  {/each}
 
   <!-- <h1 class="{success}">Hello {name} </h1>
 	<h2 class:promete>{@html role}</h2>
@@ -41,7 +38,6 @@
     <h2>num is not a number</h2>
   {/if} -->
 </main>
-
 <style>
   /* .underline{
 		text-decoration: underline;
@@ -62,14 +58,12 @@
     max-width: 240px;
     margin: 0 auto;
   }
-
-  h1 {
+  /* h1 {
     color: #ff3e00;
     text-transform: uppercase;
     font-size: 4em;
     font-weight: 100;
-  }
-
+  } */
   @media (min-width: 640px) {
     main {
       max-width: none;
